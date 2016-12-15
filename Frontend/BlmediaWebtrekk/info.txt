@@ -1,0 +1,33 @@
+<h2>Introduction</h2>
+<p>The Webtrekk Shopware plugin enables you to integrate the Webtrekk pixel into your Shopware online shop simply and
+quickly. In the process, the Webtrekk pixel code (Version 4) will be added to each page of your shop. This, in turn,
+ensures all standard parameters are configured.</p>
+<br />
+<p>The following analyses will then be possible:</p>
+<br />
+<ul>
+<li>Traffic analyses (incl. identification of (new & regular) visitors)</li>
+<li>E-commerce analyses (incl. product and order analyses, without any individual configuration options, however)</li>
+<li>Standard marketing analyses, i.e. automatic recognition of user origin, such as SEO, direct or referrer (without identification of the individual campaigns)</li>
+<li>Page analyses (incl. heatmaps)</li>
+<li>Action analyses</li>
+<li>Form analyses</li>
+</ul>
+<br />
+<p>The plugin was developed for Shopware in combination with the Webtrekk pixel version 4. (i.e. you will need the
+corresponding pixel JS file and Webtrekk TagIntegration account in addition to the Shopware plugin).</p>
+<br />
+<p>This document provides an overview of the values set on the individual pages and explains the integration of the
+plugin into your Shopware system.</p>
+<br />
+<h2>Configuration</h2>
+<ul>
+<li><b>Activate Plugin:</b> You can enable or disable the Webtrekk plugin.</li>
+<li><b>Webtrekk JavaScript file:</b> The URL to the JavaScript which contains the tracking code (/webtrekk_v4.min.js).</li>
+<li><b>Async:</b> Defines whether the TagIntegration container should be loaded asynchronously.</li>
+<li><b>TagIntegration ID:</b> Enter your TagIntegration customer ID here, if the TagIntegration file should be loaded from a Webtrekk server.</li>
+<li><b>TagIntegration Domain:</b> Enter the TagIntegration domain here, if the TagIntegration file should be loaded from a Webtrekk server.</li>
+<li><b>Custom Domain:</b> Enter your domain here, if the TagIntegration file should be loaded from your server.</li>
+<li><b>Custom Path:</b> Enter the path to your JavaScript file here, if the TagIntegration file should be loaded from your server.</li>
+<li><b>Attribute Blacklist:</b> You can define a semicolon separated list for all attributes in the Webtrekk data layer, which you want to filter. This is necessary for the specific attributes "userData_*", "billing_*" and "shipping_*", if you do not want this in the data layer.</li>
+</ul>

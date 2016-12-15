@@ -1,0 +1,22 @@
+{
+  "label": {
+    "de": "Webtrekk Datalayer Integration",
+    "en": "Webtrekk Datalayer Integration"
+  },
+  "copyright": "(c) by BLmedia GmbH",
+  "link": "http://store.shopware.com",
+  "author": "BLmedia GmbH",
+
+  "currentVersion": "1.0.0",
+
+  "changelog": {
+    "de": {
+      "1.0.0": "Erstveröffentlichung"
+    }
+  },
+
+  "compatibility": {
+    "minimumVersion": "5.0.0",
+    "maximumVersion": null
+  }
+}
