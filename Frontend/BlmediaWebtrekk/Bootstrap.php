@@ -98,7 +98,7 @@ class Shopware_Plugins_Frontend_BlmediaWebtrekk_Bootstrap extends Shopware_Compo
      */
     public function getVersion()
     {
-        return "1.0.0";
+        return "1.0.2";
     }
 
     /**
@@ -363,7 +363,7 @@ class Shopware_Plugins_Frontend_BlmediaWebtrekk_Bootstrap extends Shopware_Compo
                 continue;
 
             $methodName = '_' . $k . 'Controller';
-            if(method_exists($this, $methodName)==true){
+            if(is_callable(array($this, $methodName))==true){
                 $this->$methodName();
             }
         }

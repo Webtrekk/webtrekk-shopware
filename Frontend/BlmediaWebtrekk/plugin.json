@@ -7,11 +7,12 @@
   "link": "http://store.shopware.com",
   "author": "BLmedia GmbH",
 
-  "currentVersion": "1.0.0",
+  "currentVersion": "1.0.2",
 
   "changelog": {
     "de": {
-      "1.0.0": "Erstveröffentlichung"
+      "1.0.0": "initial commit",
+      "1.0.2": "if check is method callable and not exists"
     }
   },
 
