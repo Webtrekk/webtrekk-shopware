@@ -3,7 +3,7 @@ Integration und Konfiguration des Webtrekk Shopware Plugin | Version $version$
 # Einführung
 
 Das Webtrekk Shopware Plugin ermöglicht Ihnen eine einfache Integration des Webtrekk Pixels in Ihre mit Shopware 
-verwaltete Webseite. Jede Seite des Webangebots wird mit dem Webtrekk-Pixelcode (in der Version 4) versehen. Auf diese 
+verwaltete Webseite. Jede Seite des Webangebots wird mit dem Webtrekk-Pixelcode (in der Version 5) versehen. Auf diese 
 Weise werden alle Standardparameter erfasst.
 
 Folgende Auswertungen sind damit möglich:
@@ -15,7 +15,7 @@ Folgende Auswertungen sind damit möglich:
 - Aktionsanalysen
 - Formularanalysen
 
-Entwickelt wurde das Plugin für Shopware 5.0 - 5.2.1 in Kombination mit dem Webtrekk Pixel in der Version 4. (D.h. 
+Entwickelt wurde das Plugin für Shopware 5.0 - 5.2.1 in Kombination mit dem Webtrekk Pixel in der Version 5. (D.h. 
 zusätzlich zu dem Shopware Plugin benötigen Sie eine entsprechende JS-Datei des Pixels und einen Webtrekk 
 TagIntegration Account)
 
@@ -51,8 +51,6 @@ könne.
 ![Alt Configuration](img/configuration.png)
 
 - **Activate Plugin:** Hier können Sie das Webtrekk Plugin zusätzlich aktivieren bzw. deaktivieren
-- **Webtrekk JavaScript file:** Hier können Sie den Pfad zur Webtrekk JavaScript Datei eintragen (/webtrekk_v4.min.js)
-- **Async:** Legt fest, ob der TagIntegration-Container asynchron geladen werden soll
 - **TagIntegration ID:** Tragen Sie hier Ihre TagIntegration Kunden-ID ein, wenn die TagIntegration Datei vom Webtrekk Server geladen werden soll
 - **TagIntegration Domain:** Tragen Sie hier die TagIntegration Domain ein, wenn die TagIntegration Datei vom Webtrekk Server geladen werden soll
 - **Custom Domain:** Tragen Sie hier Ihre Domain ein, wenn die TagIntegration Datei von Ihrem Server geladen werden soll

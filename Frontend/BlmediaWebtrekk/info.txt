@@ -1,6 +1,6 @@
 <h2>Introduction</h2>
 <p>The Webtrekk Shopware plugin enables you to integrate the Webtrekk pixel into your Shopware online shop simply and
-quickly. In the process, the Webtrekk pixel code (Version 4) will be added to each page of your shop. This, in turn,
+quickly. In the process, the Webtrekk pixel code (Version 5) will be added to each page of your shop. This, in turn,
 ensures all standard parameters are configured.</p>
 <br />
 <p>The following analyses will then be possible:</p>
@@ -14,7 +14,7 @@ ensures all standard parameters are configured.</p>
 <li>Form analyses</li>
 </ul>
 <br />
-<p>The plugin was developed for Shopware in combination with the Webtrekk pixel version 4. (i.e. you will need the
+<p>The plugin was developed for Shopware in combination with the Webtrekk pixel version 5. (i.e. you will need the
 corresponding pixel JS file and Webtrekk TagIntegration account in addition to the Shopware plugin).</p>
 <br />
 <p>This document provides an overview of the values set on the individual pages and explains the integration of the

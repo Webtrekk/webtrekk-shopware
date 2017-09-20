@@ -7,12 +7,13 @@
   "link": "http://store.shopware.com",
   "author": "BLmedia GmbH",
 
-  "currentVersion": "1.0.2",
+  "currentVersion": "1.0.3",
 
   "changelog": {
     "de": {
       "1.0.0": "initial commit",
-      "1.0.2": "if check is method callable and not exists"
+      "1.0.2": "if check is method callable and not exists",
+      "1.0.3": "update to Webtrekk tracking pixel v5"
     }
   },
 

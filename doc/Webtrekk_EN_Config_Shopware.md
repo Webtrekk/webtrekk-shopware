@@ -3,7 +3,7 @@ Integration and Configuration of the Webtrekk Shopware Plugin | Version $version
 # Introduction
 
 The Webtrekk Shopware plugin enables you to integrate the Webtrekk pixel into your Shopware online shop simply and 
-quickly. In the process, the Webtrekk pixel code (Version 4) will be added to each page of your shop. This, in turn, 
+quickly. In the process, the Webtrekk pixel code (Version 5) will be added to each page of your shop. This, in turn, 
 ensures all standard parameters are configured.
 
 The following analyses will then be possible:
@@ -15,7 +15,7 @@ The following analyses will then be possible:
 - Action analyses
 - Form analyses
 
-The plugin was developed for Shopware 5.0 - 5.2.1 in combination with the Webtrekk pixel version 4. (i.e. you will need 
+The plugin was developed for Shopware 5.0 - 5.2.1 in combination with the Webtrekk pixel version 5. (i.e. you will need 
 the corresponding pixel JS file and Webtrekk TagIntegration account in addition to the Shopware plugin).
 
 This document provides an overview of the values set on the individual pages and explains the integration of the 
@@ -48,8 +48,6 @@ A form for the basic configuration should appear, after installing the plugin.
 ![Alt Configuration](img/configuration.png)
 
 - **Activate Plugin:** Here you can activate and deactivate the webtrekk plugin.
-- **Webtrekk JavaScript file:** The URL to the JavaScript which contains the tracking code (/webtrekk_v4.min.js).
-- **Async:** Defines whether the TagIntegration container should be loaded asynchronously.
 - **TagIntegration ID:** Enter your TagIntegration customer ID here, if the TagIntegration file should be loaded from a Webtrekk server.
 - **TagIntegration Domain:** Enter the TagIntegration domain here, if the TagIntegration file should be loaded from a Webtrekk server.
 - **Custom Domain:** Enter your domain here, if the TagIntegration file should be loaded from your server.

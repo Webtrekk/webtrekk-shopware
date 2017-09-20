@@ -98,7 +98,7 @@ class Shopware_Plugins_Frontend_BlmediaWebtrekk_Bootstrap extends Shopware_Compo
      */
     public function getVersion()
     {
-        return "1.0.2";
+        return "1.0.3";
     }
 
     /**
@@ -136,23 +136,6 @@ class Shopware_Plugins_Frontend_BlmediaWebtrekk_Bootstrap extends Shopware_Compo
         $form->setElement('boolean', 'activatePlugin',
             array(
                 'label' => 'Activate Plugin',
-                'value' => 1,
-                'scope' => \Shopware\Models\Config\Element::SCOPE_SHOP
-            )
-        );
-
-        $form->setElement('text', 'pathToWebtrekkJsFile',
-            array(
-                'label' => 'Webtrekk JavaScript file:',
-                'value' => '',
-                'description' => '',
-                'scope' => \Shopware\Models\Config\Element::SCOPE_SHOP
-            )
-        );
-
-        $form->setElement('boolean', 'wt_async',
-            array(
-                'label' => 'Async',
                 'value' => 1,
                 'scope' => \Shopware\Models\Config\Element::SCOPE_SHOP
             )
@@ -319,17 +302,11 @@ class Shopware_Plugins_Frontend_BlmediaWebtrekk_Bootstrap extends Shopware_Compo
         // Basic Konfiguration
         ///////////////////////////////////////////////////////////////
 
-        // Trackid + TrackDomain
-        $this->View()->assign('blPathToWebtrekkJsFile', $config->pathToWebtrekkJsFile);
-
-        // Async
-        $this->addWebtrekkConfigKeyValuePair('async', $this->_string2bool($config->wt_async));
-
         // Safetag ID
-        $this->addWebtrekkConfigKeyValuePair('safetagId', $config->wt_safetagId);
+        $this->addWebtrekkConfigKeyValuePair('tiId', $config->wt_safetagId);
 
         // Safetag Path
-        $this->addWebtrekkConfigKeyValuePair('safetagDomain', $config->wt_safetagDomain);
+        $this->addWebtrekkConfigKeyValuePair('tiDomain', $config->wt_safetagDomain);
 
         // Custom ID
         $this->addWebtrekkConfigKeyValuePair('customDomain', $config->wt_customDomain);
@@ -372,9 +349,7 @@ class Shopware_Plugins_Frontend_BlmediaWebtrekk_Bootstrap extends Shopware_Compo
         $this->setDatalayerKeyValuePair('pageType', $this->getPageType());
 
         // Webtrekk Config Arrays
-        $webtrekk_global_config = array(
-            "safetag" => $this->getWebtrekkConfigArray()
-        );
+        $webtrekk_global_config = $this->getWebtrekkConfigArray();
         $this->View()->assign('blWebtrekkConfig', $webtrekk_global_config);
 
         // Webtrekk Datalayer
